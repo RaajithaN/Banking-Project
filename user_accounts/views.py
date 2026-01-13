@@ -64,7 +64,7 @@ def login_user(request):
                     recipient_list= {email}
                 )       
                 request.session["otp_email"] = user.email
-                messages.success(request,"otp sent successfully")
+                messages.success(request,"otp sent successfullyy")
                 return redirect('otp')
         except UserAccounts.DoesNotExist:
             messages.error(request, "User does not exist")
